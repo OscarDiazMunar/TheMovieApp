@@ -44,7 +44,7 @@ fun DetailMovieScreen(
     navController: NavController
 ) {
     LaunchedEffect(id) { id?.let {
-        viewModel.fetchDetailPoke(it)
+        viewModel.fetchDetailMovie(it)
     }}
     val moviesDetail: MovieDetailEntity = viewModel.getDetailFlow.collectAsState().value
 

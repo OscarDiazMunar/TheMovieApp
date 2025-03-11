@@ -8,6 +8,8 @@ import javax.inject.Inject
 
 class DetailMovieUseCase @Inject constructor(
     private val getListMoviesRepository: GetListMoviesRepository
-): BaseUseCase<String, Flow<MovieDetailEntity>> {
-    override suspend fun execute(input: String): Flow<MovieDetailEntity> = getListMoviesRepository.getDetailMovie(id = input)
+): BaseUseCase<String, MovieDetailEntity> {
+
+    override fun process(request: String): Flow<MovieDetailEntity> =
+         getListMoviesRepository.getDetailMovie(id = request)
 }

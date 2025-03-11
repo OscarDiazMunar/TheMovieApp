@@ -9,8 +9,9 @@ import javax.inject.Inject
 
 class GetListMoviesUsecCase @Inject constructor(
     private val getListMoviesRepository: GetListMoviesRepository
-): BaseUseCase<Unit, Flow<PagingData<MoviesEntity>>> {
-    override suspend fun execute(input: Unit): Flow<PagingData<MoviesEntity>> {
-        return getListMoviesRepository.getListMovies()
-    }
+): BaseUseCase<Unit, PagingData<MoviesEntity>> {
+
+    override fun process(request: Unit): Flow<PagingData<MoviesEntity>> =
+        getListMoviesRepository.getListMovies()
+
 }

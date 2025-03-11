@@ -1,5 +1,11 @@
 package com.oscar.themovieapp.commons
 
-interface BaseUseCase<In, Out>{
-    suspend fun execute(input: In): Out
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOn
+
+interface BaseUseCase<In, Out> {
+    suspend fun execute(input: In) = process(input).flowOn(Dispatchers.IO)
+
+    abstract fun process(request: In): Flow<Out>
 }
