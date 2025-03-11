@@ -12,7 +12,7 @@ class MoviesPagingSource(
 
         return try {
 
-            val currentPage = params.key ?: 0
+            val currentPage = params.key ?: 1
             var allMovies = emptyList<MoviesEntity>()
             remoteListMoviesDataSource.getListMovies(page = currentPage).collect {
                 allMovies = it

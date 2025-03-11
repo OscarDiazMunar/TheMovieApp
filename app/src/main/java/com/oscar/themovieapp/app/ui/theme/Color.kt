@@ -1,4 +1,4 @@
-package com.oscar.themovieapp.ui.theme
+package com.oscar.themovieapp.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

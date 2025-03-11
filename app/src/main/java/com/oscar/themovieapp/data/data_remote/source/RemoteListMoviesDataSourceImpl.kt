@@ -22,7 +22,6 @@ class RemoteListMoviesDataSourceImpl @Inject constructor(
         return results.map {item ->
             MoviesEntity(
                 id = item.id,
-                originalTitle = item.originalTitle,
                 posterPath = item.posterPath,
                 releaseDate = item.releaseDate,
                 title = item.title

@@ -15,8 +15,9 @@ class GetListMoviesRepositoryImpl @Inject constructor(
 ): GetListMoviesRepository {
     override fun getListMovies(): Flow<PagingData<MoviesEntity>> {
         return Pager(
+            initialKey = 1,
             config = PagingConfig(
-                pageSize = 1
+                pageSize = 10
             ),
             pagingSourceFactory = { MoviesPagingSource(remoteListMoviesDataSource) }
         ).flow
