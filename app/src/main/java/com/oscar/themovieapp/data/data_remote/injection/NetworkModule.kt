@@ -22,9 +22,13 @@ class NetworkModule {
         val httpLoggingInterceptor = HttpLoggingInterceptor()
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
+        val authInterceptor = AuthInterceptor()
+
+
         return OkHttpClient.Builder()
             .readTimeout(15, TimeUnit.SECONDS)
             .connectTimeout(15, TimeUnit.SECONDS)
+            .addInterceptor(authInterceptor)
             .addInterceptor(httpLoggingInterceptor)
             .build()
     }

@@ -1,4 +1,4 @@
-package com.oscar.themovieapp.domain.entity
+package com.oscar.themovieapp.domain.entity.list
 
 data class MoviesEntity(
     val id: String,

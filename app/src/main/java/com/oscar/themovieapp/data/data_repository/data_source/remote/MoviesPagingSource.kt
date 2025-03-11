@@ -2,7 +2,7 @@ package com.oscar.themovieapp.data.data_repository.data_source.remote
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.oscar.themovieapp.domain.entity.MoviesEntity
+import com.oscar.themovieapp.domain.entity.list.MoviesEntity
 
 class MoviesPagingSource(
     private val remoteListMoviesDataSource: RemoteListMoviesDataSource

@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import androidx.paging.filter
-import com.oscar.themovieapp.domain.entity.MoviesEntity
+import com.oscar.themovieapp.domain.entity.list.MoviesEntity
 import com.oscar.themovieapp.domain.usecase.GetListMoviesUsecCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

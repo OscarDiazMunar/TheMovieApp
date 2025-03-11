@@ -1,4 +1,4 @@
-package com.oscar.themovieapp.data.data_remote.networking.model
+package com.oscar.themovieapp.data.data_remote.networking.model.list
 
 import com.squareup.moshi.Json
 

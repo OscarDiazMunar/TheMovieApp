@@ -36,7 +36,8 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import coil.compose.AsyncImage
 import com.oscar.themovieapp.R
 import com.oscar.themovieapp.commons.Constants
-import com.oscar.themovieapp.domain.entity.MoviesEntity
+import com.oscar.themovieapp.commons.NavigationScreen
+import com.oscar.themovieapp.domain.entity.list.MoviesEntity
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -91,7 +92,7 @@ fun ListMoviesScreen(
         }
     ) { innerPadding ->
         AllMovies(listMoviesModel = moviesList, innerPadding) { itemId ->
-
+            navController.navigate(NavigationScreen.Detail.route + "/" + itemId)
         }
     }
 }

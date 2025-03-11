@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TheMovieApp</string>
     <string name="search_movie">Search movie</string>
+    <string name="release_date">Release date</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Genre</string>
 </resources>
