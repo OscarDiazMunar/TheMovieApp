@@ -1,6 +1,6 @@
 # TheMovieApp
 
-PokeApp is a modern Android application built using **Clean Architecture**, following best practices to ensure maintainability, scalability, and testability. The app fetches TheMovieDB data from an API, supports pagination, uses image loading.
+TheMovieApp is a modern Android application built using **Clean Architecture**, following best practices to ensure maintainability, scalability, and testability. The app fetches TheMovieDB data from an API, supports pagination, uses image loading.
 
 ## 📂 Project Structure
 
@@ -57,7 +57,7 @@ The project follows **Clean Architecture**, which divides the codebase into thre
 
 ## 📸 Screenshots
 
-Here are some screenshots of PokeApp in action:
+Here are some screenshots of TheMovieApp in action:
 
 ### Home Screen
 <p align="center">
